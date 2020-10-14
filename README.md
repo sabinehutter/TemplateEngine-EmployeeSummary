@@ -6,15 +6,13 @@
   # Welcome to the Template Engine Specializing in Employee Summaries!  
 
   ## Description
-    This application allows you to automatically enter information about yourself (as the manager), and your team of interns and engineers and generates a html page showing cards of you and your team. ! 
+    This application allows you to automatically enter information about yourself (as the manager), and your team of interns and engineers and generates a html page showing cards of you and your team.
 
     This application prompts you to enter your information and your teams information. 
     ![Image of program prompt](https://sabinehutter.github.io/Template_Engine-Employee_Summary/readme-images/readme-prompts.png)
 
-
     And the output is an html file that contains cards with each employee. 
-    ![alt text](https://sabinehutter.github.io/Template_Engine-Employee_Summary/readme-images/readme-output.png)
-
+     ![Image of program output](https://sabinehutter.github.io/Template_Engine-Employee_Summary/readme-images/readme-output.png)
 
   ## Table of Contents
   Navigate through the README Using the Table of Contents : 
