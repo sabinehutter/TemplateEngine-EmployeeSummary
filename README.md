@@ -12,7 +12,7 @@
     ![Optional Text](../master/myFolder/image.png)
 
 
-    ![alt text](../master/Develop/readme-images/readme-prompts.png)
+    ![alt text](Develop/readme-images/readme-prompts.png)
 
 
     And the output is an html file that contains cards with each employee. 
