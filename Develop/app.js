@@ -38,7 +38,12 @@ function appMenu() {
                         /^[1-9]\d*$/
                     );
                     if (pass) {
+                        if (idArray.includes(answers)){
+                            return "This ID is already taken. Please enter a differnt ID/"
+                        }
+                        else{
                         return true;
+                        }
                     }
                     return "Please enter a positive number greater than zero.";
                 }
@@ -126,7 +131,12 @@ function appMenu() {
                     /^[1-9]\d*$/
                 );
                 if (pass) {
+                    if (idArray.includes(answers)){
+                        return "This ID is already taken. Please enter a differnt ID/"
+                    }
+                    else{
                     return true;
+                    }
                 }
                 return "Please enter a positive number greater than zero.";
             }
@@ -188,7 +198,12 @@ function appMenu() {
                     /^[1-9]\d*$/
                 );
                 if (pass) {
+                    if (idArray.includes(answers)){
+                        return "This ID is already taken. Please enter a differnt ID/"
+                    }
+                    else{
                     return true;
+                    }
                 }
                 return "Please enter a positive number greater than zero.";
             }
