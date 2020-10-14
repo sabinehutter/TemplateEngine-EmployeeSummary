@@ -12,7 +12,7 @@
     ![Optional Text](../master/myFolder/image.png)
 
 
-    ![alt text](Develop/readme-images/readme-prompts.png)
+    ![alt text](https://github.com/sabinehutter/Template_Engine-Employee_Summary/tree/main/readme-images/readme-prompts.png)
 
 
     And the output is an html file that contains cards with each employee. 
