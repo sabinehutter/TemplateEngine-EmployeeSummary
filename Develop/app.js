@@ -38,7 +38,7 @@ function appMenu() {
                         /^[1-9]\d*$/
                     );
                     if (pass) {
-                        if (idArray.includes(answers)){
+                        if (idArray.includes(answer)){
                             return "This ID is already taken. Please enter a differnt ID/"
                         }
                         else{
@@ -65,7 +65,7 @@ function appMenu() {
             {
                 type: "input",
                 name: "managerEmail",
-                message: "What is your manager's eemail?",
+                message: "What is your manager's email?",
                 validate: answer => {
                     const pass = answer.match(
                         /\S+@\S+\.\S+/
@@ -77,13 +77,13 @@ function appMenu() {
                 }
             }
 
-        ]);
+        ]).then(answers => {;
 
-        const manager = new Manager(answers.ManagerName, answers.managerId, answers.managerOfficeNumber, answers.managerEmail)
+        const manager = new ManagerExport(answers.ManagerName, answers.managerId, answers.managerOfficeNumber, answers.managerEmail)
         teamMembers.push(manager);
         idArray.push(answers.managerId);
         createTeam();
-
+        })
     }
 
     function createTeam() {
@@ -131,7 +131,7 @@ function appMenu() {
                     /^[1-9]\d*$/
                 );
                 if (pass) {
-                    if (idArray.includes(answers)){
+                    if (idArray.includes(answer)){
                         return "This ID is already taken. Please enter a differnt ID/"
                     }
                     else{
@@ -169,12 +169,14 @@ function appMenu() {
             //     return "Please enter a valid email."
             // }
         }
-        ])
+        ]).then( answers => {
 
-        const engineer = new Engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGithub)
+
+        const engineer = new EngineerExport(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGithub)
         teamMembers.push(engineer);
         idArray.push(answers.engineerId);
         createTeam();
+    });
     }
 
     function addIntern(){
@@ -198,7 +200,7 @@ function appMenu() {
                     /^[1-9]\d*$/
                 );
                 if (pass) {
-                    if (idArray.includes(answers)){
+                    if (idArray.includes(answer)){
                         return "This ID is already taken. Please enter a differnt ID/"
                     }
                     else{
@@ -236,12 +238,14 @@ function appMenu() {
             //     return "Please enter a valid email."
             // }
         }
-        ])
+        ]).then( answers => {
 
-        const intern = new Engineer(answers.internName, answers.internId, answers.internEmail, answers.internSchool)
+
+        const intern = new InternExport(answers.internName, answers.internId, answers.internEmail, answers.internSchool)
         teamMembers.push(intern);
         idArray.push(answers.internId);
         createTeam();
+    });
     }
 
     function buildTeam() {
