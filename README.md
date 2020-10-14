@@ -9,8 +9,12 @@
     This application allows you to automatically enter information about yourself (as the manager), and your team of interns and engineers and generates a html page showing cards of you and your team. ! 
 
     This application prompts you to enter your information and your teams information. 
+    ![alt text](https://github.com/sabinehutter/Template_Engine-Employee_Summary/Develop/readme-prompts.png?raw=true)
+
 
     And the output is an html file that contains cards with each employee. 
+    ![alt text](https://github.com/sabinehutter/Template_Engine-Employee_Summary/Develop/readme-output.png?raw=true)
+
 
   ## Table of Contents
   Navigate through the README Using the Table of Contents : 
