@@ -107,19 +107,58 @@ function appMenu() {
 
     function addEngineer() {
         inquirer.prompt([{
-                type: "input",
-                name: "engineerName",
-                message: "What is your engineer's name? ",
-                validate: answer => {
-                    if (answer !== "") {
-                        return true;
-                    }
-                    return "Please enter at least one character."
+            type: "input",
+            name: "EngineerName",
+            message: "What is your engineer's name?",
+            validate: answer => {
+                if (answer !== "") {
+                    return true;
                 }
-            },
-            {
-
+                return "Please enter at least ne character."
             }
+        },
+        {
+            type: "input",
+            name: "engineerId",
+            message: "What is your engineer's id?",
+            validate: answer => {
+                const pass = answer.match(
+                    /^[1-9]\d*$/
+                );
+                if (pass) {
+                    return true;
+                }
+                return "Please enter a positive number greater than zero.";
+            }
+        },
+        {
+            type: "input",
+            name: "engineerEmail",
+            message: "What is your engineer's email?",
+            validate: answer => {
+                const pass = answer.match(
+                    /\S+@\S+\.\S+/
+                );
+                if (pass) {
+                    return true;
+                }
+                return "Please enter a valid email."
+            }
+        },
+        {
+            type: "input",
+            name: "engineerGithub",
+            message: "What is your engineer's github?",
+            // validate: answer => {
+            //     const pass = answer.match(
+            //         /\S+@\S+\.\S+/
+            //     );
+            //     if (pass) {
+            //         return true;
+            //     }
+            //     return "Please enter a valid email."
+            // }
+        }
         ])
     }
 
