@@ -1,6 +1,4 @@
 # TemplateEngine-EmployeeSummary
-
-# README Generator
   ![badmath](https://img.shields.io/badge/license-MIT-green)
 
   # Welcome to the Template Engine Specializing in Employee Summaries!  
